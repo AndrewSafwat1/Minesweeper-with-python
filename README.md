@@ -1,2 +1,2 @@
 # Minesweeper-with-python
-Google's minesweeper clone using pygame
+**Google's minesweeper clone using pygame**
