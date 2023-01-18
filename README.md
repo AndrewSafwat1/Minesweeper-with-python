@@ -8,7 +8,7 @@
 
 ## 1. Game Description 
 
-- **Minesweeper** is a logic puzzle video game genre generally played on personal computers. The game features a grid of clickable squares, with hidden "mines" scattered throughout the board. The objective is to clear the board without detonating any mines, with help from clues about the number of neighboring mines in each field.   You can read on [wikipedia](https://en.wikipedia.org/wiki/Minesweeper_(video_game)).
+- **Minesweeper** is a logic puzzle video game genre generally played on personal computers.  The game features a grid of clickable squares, with hidden "mines" scattered throughout the board. The objective is to clear the board without detonating any mines, with help from clues about the number of neighboring mines in each field.  You can read on [wikipedia](https://en.wikipedia.org/wiki/Minesweeper_(video_game)).
 
 ---
 
@@ -22,6 +22,8 @@
 - Or type in terminal (after you download and setup <a href="https://git-scm.com/downloads" target="_blank">git</a>):  
 
         git clone https://github.com/AndrewSafwat1/Minesweeper-with-python.git
+        
+- **NOTE**: You have to play the game in its place (do not copy/cut Minesweeper.py to another directory).
 ---
 
 ### Created by:  
