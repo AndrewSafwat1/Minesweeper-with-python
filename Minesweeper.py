@@ -195,7 +195,7 @@ winRect.center = (270, 15)
 
 
 def check(row, column): #if a space was clicked, free all spaces around it
-    if(column > 17 or column < 0 or row > 13 or row < 0 or appear[row][column] == True):
+    if(column > 17 or column < 0 or row > 13 or row < 0 or appear[row][column] == True or status[row][column] == MINE):
         return
 
     elif(status[row][column] != 0):
@@ -208,6 +208,10 @@ def check(row, column): #if a space was clicked, free all spaces around it
         check(row, column + 1)
         check(row + 1, column)
         check(row, column - 1)
+        check(row + 1, column + 1)
+        check(row - 1, column - 1)
+        check(row + 1, column - 1)
+        check(row - 1, column + 1)
 
 window = display.set_mode((540, 450))
 pg.display.set_caption("Minesweeper")
