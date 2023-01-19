@@ -22,37 +22,37 @@ EMPTY_D = (215, 184, 153)
 
 lost = 1
 
-flag_dark = pg.image.load('../pictures/flag_dark.png')
+flag_dark = pg.image.load('pictures/flag_dark.png')
 flag_dark = pg.transform.scale(flag_dark, (30, 30))
 
-flag_white = pg.image.load('../pictures/flag_white.png')
+flag_white = pg.image.load('pictures/flag_white.png')
 flag_white = pg.transform.scale(flag_white, (30, 30))
 
-bomb = pg.image.load('../pictures/bomb.png')
+bomb = pg.image.load('pictures/bomb.png')
 bomb = pg.transform.scale(bomb, (30, 30))
 
-picture1 = pg.image.load('../pictures/1.png')
+picture1 = pg.image.load('pictures/1.png')
 picture1 = pg.transform.scale(picture1, (30, 30))
 
-picture2 = pg.image.load('../pictures/2.png')
+picture2 = pg.image.load('pictures/2.png')
 picture2 = pg.transform.scale(picture2, (30, 30))
 
-picture3 = pg.image.load('../pictures/3.png')
+picture3 = pg.image.load('pictures/3.png')
 picture3 = pg.transform.scale(picture3, (30, 30))
 
-picture4 = pg.image.load('../pictures/4.png')
+picture4 = pg.image.load('pictures/4.png')
 picture4 = pg.transform.scale(picture4, (30, 30))
 
-picture5 = pg.image.load('../pictures/5.png')
+picture5 = pg.image.load('pictures/5.png')
 picture5 = pg.transform.scale(picture5, (30, 30))
 
-picture6 = pg.image.load('../pictures/6.png')
+picture6 = pg.image.load('pictures/6.png')
 picture6 = pg.transform.scale(picture6, (30, 30))
 
-picture7 = pg.image.load('../pictures/7.png')
+picture7 = pg.image.load('pictures/7.png')
 picture7 = pg.transform.scale(picture7, (30, 30))
 
-picture8 = pg.image.load('../pictures/8.png')
+picture8 = pg.image.load('pictures/8.png')
 picture8 = pg.transform.scale(picture8, (30, 30))
 
 
@@ -178,7 +178,7 @@ for i in range(0, 14):
                 if(status[i + 1][j] == MINE):
                     status[i][j] += 1
 
-font = pg.font.Font('../font/Roboto-Bold.ttf', 20)
+font = pg.font.Font('font/Roboto-Bold.ttf', 20)
 
 text = font.render('Time : ', True, WHITE)
 textRect = text.get_rect()
@@ -215,7 +215,7 @@ def check(row, column): #if a space was clicked, free all spaces around it
 
 window = display.set_mode((540, 450))
 pg.display.set_caption("Minesweeper")
-pygame_icon = pg.image.load('../pictures/icon.png')
+pygame_icon = pg.image.load('pictures/icon.png')
 pg.display.set_icon(pygame_icon)
 
  
@@ -302,7 +302,7 @@ while running:
             elif(status[(i - 30) // 30][j // 30] == 8): #8 
                 window.blit(picture8, (j, i))
             
-            elif(np.count_nonzero(appear == False) == 40):
+            if(np.count_nonzero(appear == False) == 40):
                 lost = 0
                 window.blit(win, winRect)       
 
