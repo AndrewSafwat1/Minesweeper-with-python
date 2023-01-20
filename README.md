@@ -21,7 +21,7 @@
 - Download the .zip file extension [minesweeper.zip](minesweeper.zip).
 - Or type in terminal (after you download and setup <a href="https://git-scm.com/downloads" target="_blank">git</a>):  
 
-        git clone https://github.com/AndrewSafwat1/Minesweeper-with-python.git
+        $ git clone https://github.com/AndrewSafwat1/Minesweeper-with-python.git
         
 - **NOTE**: You have to play the game in its place (do not copy/cut Minesweeper.py to another directory).
 ---
